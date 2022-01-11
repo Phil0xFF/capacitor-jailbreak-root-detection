@@ -1,7 +1,7 @@
 import Foundation
 
 @objc public class JailbreakRoot: NSObject {
-    @objc public func echo(_ value: String) -> String {
+    @objc public func isJailbrokenOrRooted(_ value: String) -> String {
         print(value)
         return value
     }

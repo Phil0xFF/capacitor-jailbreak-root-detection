@@ -1,3 +1,7 @@
 export interface JailbreakRootPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  isJailbrokenOrRooted(): Promise<JailbreakRootResult>;
+}
+
+export interface JailbreakRootResult {
+  result: boolean;
 }

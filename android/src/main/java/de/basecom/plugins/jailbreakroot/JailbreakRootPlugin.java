@@ -12,11 +12,11 @@ public class JailbreakRootPlugin extends Plugin {
     private JailbreakRoot implementation = new JailbreakRoot();
 
     @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
+    public void isJailbrokenOrRooted(PluginCall call) {
+        boolean isDeviceRooted = RootUtil.isDeviceRooted();
 
         JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
+        ret.put("result", implementation.isJailbrokenOrRooted(isDeviceRooted));
         call.resolve(ret);
     }
 }

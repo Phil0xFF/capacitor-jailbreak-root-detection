@@ -9,10 +9,16 @@ import Capacitor
 public class JailbreakRootPlugin: CAPPlugin {
     private let implementation = JailbreakRoot()
 
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
+    @objc func isJailbrokenOrRooted(_ call: CAPPluginCall) {
+        if(UIDevice.current.isSimulator) {
+            call.resolve([
+                "result": false
+            ])
+        }
+        
         call.resolve([
-            "value": implementation.echo(value)
+            "result": UIDevice.current.isJailBroken
         ])
     }
+    
 }

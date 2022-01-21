@@ -1,5 +1,5 @@
 {
-  "name": "jailbreak-root-detection",
+  "name": "capacitor-jailbreak-root-detection",
   "version": "1.0.0",
   "description": "Jailbreak Root detection Plugin for Capacitor",
   "main": "dist/plugin.cjs.js",
@@ -13,7 +13,7 @@
     "ios/Plugin/",
     "JailbreakRootDetection.podspec"
   ],
-  "author": "Phil Miletic",
+  "author": "Phil Miletic <p.miletic@basecom.de>",
   "license": "MIT",
   "repository": {
     "type": "git",

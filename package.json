@@ -1,5 +1,5 @@
 {
-  "name": "capacitor-jailbreak-root-detection",
+  "name": "@basecom-gmbh/capacitor-jailbreak-root-detection",
   "version": "1.0.0",
   "description": "Jailbreak Root detection Plugin for Capacitor",
   "main": "dist/plugin.cjs.js",
@@ -11,7 +11,7 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "JailbreakRootDetection.podspec"
+    "BasecomGmbhCapacitorJailbreakRootDetection.podspec"
   ],
   "author": "Phil Miletic <p.miletic@basecom.de>",
   "license": "MIT",

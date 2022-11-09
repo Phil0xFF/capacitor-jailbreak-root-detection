@@ -1,7 +1,7 @@
 {
-  "name": "@basecom-gmbh/capacitor-jailbreak-root-detection",
-  "version": "1.0.3",
-  "description": "Jailbreak Root detection Plugin for Capacitor",
+  "name": "@uepm/capacitor-jailbreak-root-detection",
+  "version": "1.0.5",
+  "description": "Internal UEPM Jailbreak Root detection Plugin for Capacitor",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Phil0xFF/capacitor-jailbreak-root-detection.git"
+    "url": "git+https://github.com/francodimasi/capacitor-jailbreak-root-detection"
   },
   "bugs": {
-    "url": "https://github.com/Phil0xFF/capacitor-jailbreak-root-detection/issues"
+    "url": "https://github.com/francodimasi/capacitor-jailbreak-root-detection/issues"
   },
   "keywords": [
     "capacitor",

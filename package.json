@@ -17,7 +17,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/francodimasi/capacitor-jailbreak-root-detection"
+    "url": "git+https://github.com/francodimasi/capacitor-jailbreak-root-detection.git"
   },
   "bugs": {
     "url": "https://github.com/francodimasi/capacitor-jailbreak-root-detection/issues"

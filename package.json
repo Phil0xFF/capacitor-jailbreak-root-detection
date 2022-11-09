@@ -1,6 +1,6 @@
 {
   "name": "@basecom-gmbh/capacitor-jailbreak-root-detection",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Jailbreak Root detection Plugin for Capacitor",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",

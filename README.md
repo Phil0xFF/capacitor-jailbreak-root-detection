@@ -34,10 +34,10 @@ Add 'cydia' to the query schema of your app, otherwise the jailbreak detection w
 ### isJailbrokenOrRooted()
 
 ```typescript
-isJailbrokenOrRooted() => any
+isJailbrokenOrRooted() => Promise<JailbreakRootResult>
 ```
 
-**Returns:** <code>any</code>
+**Returns:** <code>Promise&lt;<a href="#jailbreakrootresult">JailbreakRootResult</a>&gt;</code>
 
 --------------------
 

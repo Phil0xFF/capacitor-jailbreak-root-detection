@@ -5,13 +5,18 @@ Jailbreak Root detection plugin for capacitor.
 ## Install
 
 Install the package.
+
 ```bash
 npm install jailbreak-root-detection
 npx cap sync
 ```
 
+*Version compatibility*: Match the plugin version with your Capacitor version - use jailbreak-root-detection@6.0.0 with Capacitor 6.x and jailbreak-root-detection@7.0.0 with Capacitor 7.x.
+
 ### iOS installation
+
 Add 'cydia' to the query schema of your app, otherwise the jailbreak detection will not work.
+
 ```bash
 <key>LSApplicationQueriesSchemes</key>
 <array>

@@ -31,8 +31,8 @@ For iOS jailbreak detection to function properly, you must add 'cydia' to your a
 
 <docgen-index>
 
-- [`isJailbrokenOrRooted()`](#isjailbrokenorrooted)
-- [Interfaces](#interfaces)
+* [`isJailbrokenOrRooted()`](#isjailbrokenorrooted)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
@@ -45,18 +45,18 @@ For iOS jailbreak detection to function properly, you must add 'cydia' to your a
 isJailbrokenOrRooted() => Promise<JailbreakRootResult>
 ```
 
-Checks if the device is jailbroken (iOS) or rooted (Android).
-
 **Returns:** <code>Promise&lt;<a href="#jailbreakrootresult">JailbreakRootResult</a>&gt;</code>
 
----
+--------------------
+
 
 ### Interfaces
 
+
 #### JailbreakRootResult
 
-| Property     | Type                 | Description                                         |
-| ------------ | -------------------- | --------------------------------------------------- |
-| **`result`** | <code>boolean</code> | `true` if device is jailbroken/rooted, else `false` |
+| Prop         | Type                 |
+| ------------ | -------------------- |
+| **`result`** | <code>boolean</code> |
 
 </docgen-api>

@@ -1,35 +1,38 @@
 # Capacitor Jailbreak Root Detection
 
-Jailbreak Root detection plugin for capacitor.
+A Capacitor plugin for detecting jailbroken iOS devices and rooted Android devices in your mobile applications.
 
-## Install
+## Installation
 
-Install the package.
+Install the package using npm:
 
 ```bash
-npm install jailbreak-root-detection
+npm install @basecom-gmbh/capacitor-jailbreak-root-detection
 npx cap sync
 ```
 
-*Version compatibility*: Match the plugin version with your Capacitor version - use jailbreak-root-detection@6.0.0 with Capacitor 6.x and jailbreak-root-detection@7.0.0 with Capacitor 7.x.
+**Version Compatibility:**
 
-### iOS installation
+- Use `jailbreak-root-detection@6.0.0` with Capacitor 6.x
+- Use `jailbreak-root-detection@7.0.0` with Capacitor 7.x
 
-Add 'cydia' to the query schema of your app, otherwise the jailbreak detection will not work.
+### iOS Configuration
 
-```bash
+For iOS jailbreak detection to function properly, you must add 'cydia' to your app's query schemes. Open your `Info.plist` file and add:
+
+```xml
 <key>LSApplicationQueriesSchemes</key>
 <array>
     <string>cydia</string>
 </array>
 ```
 
-## API
+## API Reference
 
 <docgen-index>
 
-* [`isJailbrokenOrRooted()`](#isjailbrokenorrooted)
-* [Interfaces](#interfaces)
+- [`isJailbrokenOrRooted()`](#isjailbrokenorrooted)
+- [Interfaces](#interfaces)
 
 </docgen-index>
 
@@ -42,18 +45,18 @@ Add 'cydia' to the query schema of your app, otherwise the jailbreak detection w
 isJailbrokenOrRooted() => Promise<JailbreakRootResult>
 ```
 
+Checks if the device is jailbroken (iOS) or rooted (Android).
+
 **Returns:** <code>Promise&lt;<a href="#jailbreakrootresult">JailbreakRootResult</a>&gt;</code>
 
---------------------
-
+---
 
 ### Interfaces
 
-
 #### JailbreakRootResult
 
-| Prop         | Type                 |
-| ------------ | -------------------- |
-| **`result`** | <code>boolean</code> |
+| Property     | Type                 | Description                                         |
+| ------------ | -------------------- | --------------------------------------------------- |
+| **`result`** | <code>boolean</code> | `true` if device is jailbroken/rooted, else `false` |
 
 </docgen-api>
